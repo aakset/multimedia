@@ -1,0 +1,37 @@
+.App {
+    text-align: center;
+  }
+  
+  body {
+    background-color: #208cff;
+  }
+  
+  h1 {
+    text-align: left;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bolder;
+    font-size: 50px;
+    color: white;
+    padding-top: 2em;
+  }
+  
+  .p {
+    text-align: left;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+    padding-top: 2em;
+    line-height: 1.5;
+  }
+  
+  
+  .container {
+    display: flex;
+    justify-content: space-between;    
+  }
+
+  
+  
+  
+  
