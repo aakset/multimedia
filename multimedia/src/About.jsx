@@ -1,11 +1,11 @@
 import React from "react";
-import "./css/home.css";
 
 
-function Home() {
+
+function About() {
   return (
     <div className="container">
-      <h1>Home & About</h1>
+      <h1>About</h1>
       <p>
         Welcome to Northlake Studios, a place, where magic is made. At Northlake
         Studios, we offer a unique experience for musicians, producers, and
@@ -25,4 +25,4 @@ function Home() {
   );
 }
 
-export default Homr;
+export default About;
