@@ -6,69 +6,12 @@ body {
   background-color: #208cff;
 }
 
-.title {
-  text-align: left;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bolder;
-  font-size: 50px;
-  color: white;
-  padding-top: 2em;
-}
-
-.slogan {
-  text-align: left;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bolder;
-  font-size: 30px;
-  color: white;
-  padding-top: 2em;
-  line-height: 1.5;
-}
-
-@keyframes LeftRight {
-  0% {
-    transform: translateX(-50%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.landing {
-  padding-left: 7em;
-  animation: LeftRight 0.75s;
-}
-
-
-.container {
-  display: flex;
-  justify-content: space-between;
-
-}
-
-@keyframes RightLeft {
-  0% {
-    transform: translateX(+50%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.microphone {
-  justify-content: flex-end;
-  animation: RightLeft 0.75s;
-}
-
-.home {
-  margin-top: 4em;
-}
-
 .navbar {
-  background-color: #208cff;
+  background-color: #1164bc;
   padding: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .navbar-list {

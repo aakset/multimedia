@@ -1,6 +1,6 @@
 import React from "react";
 import microphone from "./onlinePhotos/Microphone.png";
-import "./App.css";
+import "./home.css";
 
 function Home() {
   return (

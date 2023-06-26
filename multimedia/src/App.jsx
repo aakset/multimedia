@@ -8,6 +8,7 @@ import About from "./About";
 import "./App.css";
 
 function Navbar() {
+  
   return (
     <nav className="navbar">
       <ul className="navbar-list">
