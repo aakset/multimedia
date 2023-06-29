@@ -1,4 +1,8 @@
- .title {
+body {
+  background-color: #208cff;
+}
+
+.title {
     text-align: left;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: bolder;

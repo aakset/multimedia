@@ -1,13 +1,9 @@
-.App {
-  text-align: center;
-}
-
 body {
-  background-color: #208cff;
+  background-color: #000000;
 }
 
 .navbar {
-  background-color: #1164bc;
+  background-color: #000000;
   padding: 1em;
   position: sticky;
   top: 0;
@@ -39,5 +35,5 @@ body {
 }
 
 .navbar-item a:hover {
-  color: #94b5d1;
+  color: #888888;
 }

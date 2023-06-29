@@ -44,7 +44,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
       </Routes>
     </div>
-  );
+  ); 
 }
 
 export default App;

@@ -1,0 +1,62 @@
+.renting-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+
+  .titleRenting {
+    color: white;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #333;
+  }
+  
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(140, 140, 140, 0.1);
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  input[type="date"],
+  input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 12px 30px;
+    background-color: #008f2b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .price-display {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #000000;
+  }
+  
