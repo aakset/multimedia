@@ -1,62 +1,100 @@
 .renting-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-  }
+  background-color: #000;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-left: 120px;
+  padding-right: 120px;
+}
 
-  .titleRenting {
-    color: white;
-  }
+.title-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.titleRenting {
+  font-size: 36px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
+
+.booking-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.booking-form,
+.personal-form {
+  flex-basis: 48%;
+}
+
+.booking-form label,
+.personal-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.booking-form select,
+.booking-form input[type="date"],
+.booking-form input[type="number"],
+.personal-form input[type="email"],
+.personal-form input[type="tel"],
+.personal-form input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.booking-form select:focus,
+.booking-form input[type="date"]:focus,
+.booking-form input[type="number"]:focus,
+.personal-form input[type="email"]:focus,
+.personal-form input[type="tel"]:focus,
+.personal-form input[type="text"]:focus {
+  outline: none;
   
-  h1 {
-    margin-bottom: 30px;
-    font-size: 30px;
-    color: #333;
-  }
-  
-  .booking-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    padding: 50px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(140, 140, 140, 0.1);
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #000000;
-  }
-  
-  input[type="date"],
-  input[type="number"] {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  button {
-    padding: 12px 30px;
-    background-color: #008f2b;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .price-display {
-    margin-top: 20px;
-    font-size: 20px;
-    color: #000000;
-  }
-  
+}
+
+.booking-form button,
+#confirmation {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #039b21;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover,
+#confirmation:hover {
+  background-color: #006314;
+}
+
+.price-display {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.price-display h3 {
+  font-size: 20px;
+}
+
+.confirmation-block {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.confirmation-message {
+  font-size: 20px;
+  font-weight: bold;
+}
