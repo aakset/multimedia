@@ -149,6 +149,8 @@ function RentingPage() {
         )}
       </div>
     </div>
+
+    
   );
 }
 
