@@ -11,7 +11,7 @@ function Contact() {
           type="text"
           id="fname"
           name="firstname"
-          placeholder="Ihr Vor- und Nachname..."
+          placeholder="Your first and last name..."
         />
 
         <label htmlFor="lastname">E-Mail</label>
@@ -19,21 +19,21 @@ function Contact() {
           type="text"
           id="lname"
           name="lastname"
-          placeholder="Ihre E-Mail..."
+          placeholder="Your E-Mail..."
         />
 
-        <label htmlFor="Grund">Grund</label>
+        <label htmlFor="Grund">Reason</label>
         <select id="grund" name="grund">
           <option value="Demos">Demos</option>
-          <option value="Kaufvorschlag">Kaufvorschlag</option>
-          <option value="DAWvorschlag">DAWvorschlag</option>
+          <option value="Kaufvorschlag">Recommendations hardware</option>
+          <option value="DAWvorschlag">Recommendations software</option>
         </select>
 
-        <label htmlFor="subjekt">Subjekt</label>
+        <label htmlFor="subjekt">subject</label>
         <textarea
           id="subjekt"
           name="subjekt"
-          placeholder="Schreiben Sie eine Nachricht"
+          placeholder="Write your message here..."
           style={{ height: "200px" }}
         ></textarea>
 
