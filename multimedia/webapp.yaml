@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: multimedia
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: multimedia
+  template:
+    metadata:
+      labels:
+        app: multimedia
+    spec:
+      containers:
+        - name: multimedia
+          image: sethiaakash/multimedia:latest
+          ports:
+            - containerPort: 3000
