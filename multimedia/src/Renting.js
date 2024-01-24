@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './renting.css';
 
 function RentingPage() {
@@ -11,6 +12,8 @@ function RentingPage() {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
+
+  const navigate = useNavigate();
 
   const handleDateChange = (event) => {
     setSelectedDate(event.target.value);
@@ -65,6 +68,9 @@ function RentingPage() {
 
   const handleConfirmation = () => {
     setIsConfirmed(true);
+    setTimeout(() => {
+      navigate('/payment');
+    }, 3000); // 3000 Millisekunden = 3 Sekunden
   };
 
   return (
@@ -107,7 +113,7 @@ function RentingPage() {
           </div>
         </div>
         <div className="personal-form">
-        <label htmlFor="firstName">First Name:</label>
+          <label htmlFor="firstName">First Name:</label>
           <input
             type="text"
             id="firstName"
@@ -149,8 +155,6 @@ function RentingPage() {
         )}
       </div>
     </div>
-
-    
   );
 }
 

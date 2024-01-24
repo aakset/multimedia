@@ -5,6 +5,8 @@ import Contact from "./Contact";
 import Gallery from "./Gallery";
 import Renting from "./Renting";
 import About from "./About";
+import {Login} from './Login';
+import Payment from "./Payment";
 import "./App.css";
 
 function Navbar() {
@@ -27,12 +29,16 @@ function Navbar() {
         <li className="navbar-item">
           <Link to="/Contact">Contact</Link>
         </li>
+        <li className="navbar-item">
+          <Link to="/Login">Login</Link>
+        </li>
       </ul>
     </nav>
   );
 }
 
 function App() {
+  
   return (
     <div>
       <Navbar />
@@ -42,6 +48,8 @@ function App() {
         <Route path="/Renting" element={<Renting />} />
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Payment" element={<Payment />} />
       </Routes>
     </div>
   ); 

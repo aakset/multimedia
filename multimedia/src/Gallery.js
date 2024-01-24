@@ -32,30 +32,28 @@ function Gallery() {
     setSelectedImage(null);
   };
 
+  const studios = {
+    "Northlake A": [pic1, pic2, pic3, pic4, pic5],
+    "Northlake B": [pic6, pic7, pic8, pic9, pic10],
+    "Northlake C": [pic11, pic12, pic13, pic14, pic15],
+    "Northlake D": [pic16, pic17, pic18, pic19, pic20]
+  };
+
   return (
     <div>
-      <div className="photos">
-        <img src={pic1} alt="pic1" onClick={() => handleClick(pic1)} />
-        <img src={pic2} alt="pic2" onClick={() => handleClick(pic2)} />
-        <img src={pic3} alt="pic3" onClick={() => handleClick(pic3)} />
-        <img src={pic4} alt="pic4" onClick={() => handleClick(pic4)} />
-        <img src={pic5} alt="pic5" onClick={() => handleClick(pic5)} />
-        <img src={pic6} alt="pic6" onClick={() => handleClick(pic6)} />
-        <img src={pic7} alt="pic7" onClick={() => handleClick(pic7)} />
-        <img src={pic8} alt="pic8" onClick={() => handleClick(pic8)} />
-        <img src={pic9} alt="pic9" onClick={() => handleClick(pic9)} />
-        <img src={pic10} alt="pic10" onClick={() => handleClick(pic10)} />
-        <img src={pic11} alt="pic11" onClick={() => handleClick(pic11)} />
-        <img src={pic12} alt="pic12" onClick={() => handleClick(pic12)} />
-        <img src={pic13} alt="pic13" onClick={() => handleClick(pic13)} />
-        <img src={pic14} alt="pic14" onClick={() => handleClick(pic14)} />
-        <img src={pic15} alt="pic15" onClick={() => handleClick(pic15)} />
-        <img src={pic16} alt="pic16" onClick={() => handleClick(pic16)} />
-        <img src={pic17} alt="pic17" onClick={() => handleClick(pic17)} />
-        <img src={pic18} alt="pic18" onClick={() => handleClick(pic18)} />
-        <img src={pic19} alt="pic19" onClick={() => handleClick(pic19)} />
-        <img src={pic20} alt="pic20" onClick={() => handleClick(pic20)} />
-      </div>
+      {Object.entries(studios).map(([studioName, images]) => (
+        <div key={studioName}>
+          <h2>{studioName}</h2>
+          <div className="photos">
+            {images.map((image, index) => (
+              <figure key={index} onClick={() => handleClick(image)}>
+                <img src={image} alt={`${studioName}-${index + 1}`} />
+                <figcaption>{`${studioName} - Image ${index + 1}`}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      ))}
       {selectedImage && (
         <div className="gallery-container active" onClick={handleClose}>
           <img src={selectedImage} alt="selected" />
